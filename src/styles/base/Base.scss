@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+     /* font-smoothing: antialiased; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     /* background-color: $base-30; */
+    text-rendering: optimizeLegibility;
+    height: 100%;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+  
+  /* headings design system (class-based) for DOM used */
+  .heading-xl-light { font-family: CircularStd-Book; font-size: 48px; line-height: 48px; };
+  .heading-lg-light { font-family: CircularStd-Book; font-size: 32px; line-height: 40px; };
+  .heading-md-light { font-family: CircularStd-Book; font-size: 24px; line-height: 32px; };
+  .heading-sm-light { font-family: CircularStd-Book; font-size: 16px; line-height: 24px; };
+  
+  .heading-xl-normal { font-family: CircularStd-Medium; font-size: 48px; line-height: 48px; };
+  .heading-lg-normal { font-family: CircularStd-Medium; font-size: 32px; line-height: 40px; };
+  .heading-md-normal { font-family: CircularStd-Medium; font-size: 24px; line-height: 32px; };
+  .heading-sm-normal { font-family: CircularStd-Medium; font-size: 16px; line-height: 24px; };
+  
+  .heading-xl-bold { font-family: CircularStd-Bold; font-size: 48px; line-height: 48px; };
+  .heading-lg-bold { font-family: CircularStd-Bold; font-size: 32px; line-height: 40px; };
+  .heading-md-bold { font-family: CircularStd-Bold; font-size: 24px; line-height: 32px; };
+  .heading-sm-bold { font-family: CircularStd-Bold; font-size: 16px; line-height: 24px; };
+  
+  .heading-xl-bolder { font-family: CircularStd-Black; font-size: 48px;line-height: 48px; letter-spacing: -1px; };
+  .heading-lg-bolder { font-family: CircularStd-Black; font-size: 32px; line-height: 40px; };
+  .heading-md-bolder { font-family: CircularStd-Black; font-size: 24px; line-height: 32px; };
+  .heading-sm-bolder { font-family: CircularStd-Black; font-size: 16px; line-height: 24px; };
+  
+  /* headings design system (mixin) for styling used */
+  @mixin heading-xl-light() { font-family: CircularStd-Book; font-size: 48px; line-height: 48px; };
+  @mixin heading-lg-light() { font-family: CircularStd-Book; font-size: 32px; line-height: 40px; };
+  @mixin heading-md-light() { font-family: CircularStd-Book; font-size: 24px; line-height: 32px; };
+  @mixin heading-sm-light() { font-family: CircularStd-Book; font-size: 16px; line-height: 24px; };
+  
+  @mixin heading-xl-normal() { font-family: CircularStd-Medium; font-size: 48px; line-height: 48px; };
+  @mixin heading-lg-normal() { font-family: CircularStd-Medium; font-size: 32px; line-height: 40px; };
+  @mixin heading-md-normal() { font-family: CircularStd-Medium; font-size: 24px; line-height: 32px; };
+  @mixin heading-sm-normal() { font-family: CircularStd-Medium; font-size: 16px; line-height: 24px; };
+  
+  @mixin heading-xl-bold() { font-family: CircularStd-Bold; font-size: 48px; line-height: 48px; };
+  @mixin heading-lg-bold() { font-family: CircularStd-Bold; font-size: 32px; line-height: 40px; };
+  @mixin heading-md-bold() { font-family: CircularStd-Bold; font-size: 24px; line-height: 32px; };
+  @mixin heading-sm-bold() { font-family: CircularStd-Bold; font-size: 16px; line-height: 24px; };
+  
+  @mixin heading-xl-bolder() { font-family: CircularStd-Black; font-size: 48px;line-height: 48px; letter-spacing: -1px; };
+  @mixin heading-lg-bolder() { font-family: CircularStd-Black; font-size: 32px; line-height: 40px; };
+  @mixin heading-md-bolder() { font-family: CircularStd-Black; font-size: 24px; line-height: 32px; };
+  @mixin heading-sm-bolder() { font-family: CircularStd-Black; font-size: 16px; line-height: 24px; };
+  
+  /* paragraphs design system (class-based) for DOM used */
+  .text-sm-light { font-family: CircularStd-Book; font-size: 12px; line-height: 24px; };
+  .text-md-light { font-family: CircularStd-Book; font-size: 14px; line-height: 24px; };
+  .text-lg-light { font-family: CircularStd-Book; font-size: 16px; line-height: 24px; };
+  .text-xl-light { font-family: CircularStd-Book; font-size: 18px; line-height: 24px; };
+  
+  .text-sm-normal { font-family: CircularStd-Medium; font-size: 12px; line-height: 24px; };
+  .text-md-normal { font-family: CircularStd-Medium; font-size: 14px; line-height: 24px; };
+  .text-lg-normal { font-family: CircularStd-Medium; font-size: 16px; line-height: 24px; };
+  .text-xl-normal { font-family: CircularStd-Medium; font-size: 18px; line-height: 24px; };
+  
+  .text-sm-bold { font-family: CircularStd-Bold; font-size: 12px; line-height: 24px; };
+  .text-md-bold { font-family: CircularStd-Bold; font-size: 14px; line-height: 24px; };
+  .text-lg-bold { font-family: CircularStd-Bold; font-size: 16px; line-height: 24px; };
+  .text-xl-bold { font-family: CircularStd-Bold; font-size: 18px; line-height: 24px; };
+  
+  .text-sm-bolder { font-family: CircularStd-Black; font-size: 12px; line-height: 24px; };
+  .text-md-bolder { font-family: CircularStd-Black; font-size: 14px; line-height: 24px; };
+  .text-lg-bolder { font-family: CircularStd-Black; font-size: 16px; line-height: 24px; };
+  .text-xl-bolder { font-family: CircularStd-Black; font-size: 18px; line-height: 24px; };
+  
+  /* paragraphs design system (mixin) for styling used */
+  @mixin text-sm-light() { font-family: CircularStd-Book; font-size: 12px; line-height: 24px; };
+  @mixin text-md-light() { font-family: CircularStd-Book; font-size: 14px; line-height: 24px; };
+  @mixin text-lg-light() { font-family: CircularStd-Book; font-size: 16px; line-height: 24px; };
+  @mixin text-xl-light() { font-family: CircularStd-Book; font-size: 18px; line-height: 24px; };
+  
+  @mixin text-sm-normal() { font-family: CircularStd-Medium; font-size: 12px; line-height: 24px; };
+  @mixin text-md-normal() { font-family: CircularStd-Medium; font-size: 14px; line-height: 24px; };
+  @mixin text-lg-normal() { font-family: CircularStd-Medium; font-size: 16px; line-height: 24px; };
+  @mixin text-xl-normal() { font-family: CircularStd-Medium; font-size: 18px; line-height: 24px; };
+  
+  @mixin text-sm-bold() { font-family: CircularStd-Bold; font-size: 12px; line-height: 24px; };
+  @mixin text-md-bold() { font-family: CircularStd-Bold; font-size: 14px; line-height: 24px; };
+  @mixin text-lg-bold() { font-family: CircularStd-Bold; font-size: 16px; line-height: 24px; };
+  @mixin text-xl-bold() { font-family: CircularStd-Bold; font-size: 18px; line-height: 24px; };
+  
+  @mixin text-sm-bolder() { font-family: CircularStd-Black; font-size: 12px; line-height: 24px; };
+  @mixin text-md-bolder() { font-family: CircularStd-Black; font-size: 14px; line-height: 24px; };
+  @mixin text-lg-bolder() { font-family: CircularStd-Black; font-size: 16px; line-height: 24px; };
+  @mixin text-xl-bolder() { font-family: CircularStd-Black; font-size: 18px; line-height: 24px; };
+  
+  /* paragraphs design system (class-based) for DOM used */
+  .line-height-lg { line-height: 24px; };
+  .line-height-md { line-height: 20px; };
+  .line-height-sm { line-height: 16px; };
+  
+  /* paragraphs design system (mixin) for styling used */
+  @mixin line-height-lg() { line-height: 24px; };
+  @mixin line-height-md() { line-height: 20px; };
+  @mixin line-height-sm() { line-height: 16px; };
+  
+  .form-label {
+    @include text-lg-light;
+    @include media-breakpoint-only(xs) {
+      @include text-md-light;
+    }
+  }
+  .form-control {
+    @include text-lg-light;
+    @include media-breakpoint-only(xs) {
+      @include text-sm-light;
+    }
+    color: $neutral-80;
+    &::placeholder {
+      color: $neutral-30;
+    }
+    &.x-danger {
+      border: 1px solid $semantic-danger-main;
+    }
+  }
+  
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
+  
+  .btn {
+    @include text-md-normal;
+    @include media-breakpoint-only(xs) {
+      @include text-sm-normal;
+      @include line-height-sm;
+    }
+    padding: 0.25rem 1rem;
+    // width: 100%;
+    border: none;
+    border-radius: 6px;
+    &.btn-primary {
+      background: $primary-main;
+    }
+    &.btn-secondary {
+      background: $grey-transparent;
+    }
+    &.btn-cancel {
+      background: $base-10;
+      border: 1px solid $primary-main;
+      color: $primary-main;
+    }
+    &.btn-disable {
+      background: $base-10;
+      border: 1px solid $neutral-60;
+      color: $neutral-60;
+    }
+    &.btn-link {
+      color: $primary-main;
+      text-decoration: none;
+      background: none !important;
+      text-decoration: none !important;
+      padding: 0;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    &.btn-topic {
+      color: $neutral-60;
+      background: $base-30;
+    }
+    &.btn-delete {
+      background: $primary-surface;
+      box-shadow: $shadow-1;
+      color: $primary-main;
+    }
+    &.btn-copy {
+      color: $base-30;
+      background: $primary-focus;
+    }
+  }
+  
+  .modal {
+    .modal-content {
+      padding: 0.8rem;
+      margin: 0 2rem;
+      // border-radius: 0.4rem;
+      border-radius: 0.7rem;
+      position: relative;
+      .x-modalexit-icon {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer;
+        @extend .user-select-none;
+      }
+    }
+    .modal-header {
+      border: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .modal-title {
+        @include heading-md-bold;
+        @include media-breakpoint-only(xs) {
+          @include heading-sm-bold;
+        }
+        text-align: center;
+        color: $neutral-100;
+      }
+    }
+    .modal-body {
+      @include media-breakpoint-only(xs) {
+        @include text-lg-normal;
+      }
+      color: $neutral-60;
+      text-align: center;
+      padding: 0 1rem 1rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .modal-footer {
+      &.x-border-none {
+        border: none;
+      }
+      border-top: 1px solid $neutral-30;
+      width: calc(100% + 1.6rem);
+      margin-left: -0.8rem;
+    }
+  }
+  
+  .x-card-form {
+    padding: 60px 36px;
+    background: $base-10;
+    box-shadow: $shadow-3;
+    border-radius: 12px;
+    width: 500px;
+    height: fit-content;
+    margin: 50px 0;
+    position: relative;
+  }
+  
+  .user-select-none {
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+  }
+  
+  @mixin user-select-none() {
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+  }
+  

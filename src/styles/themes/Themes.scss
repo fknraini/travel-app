@@ -1,0 +1,109 @@
+// color design
+$base-10: #ffffff;
+$base-20: #F9FAFB;
+$base-30: #f4f6f8;
+
+$bleached-white: #DFE3E8;
+
+$primary-hover: #3399CC;
+$primary-main: #30A3DD;
+$primary-focus: #D6EDF8;
+$primary-pressed: #215C7A;
+
+$green-30: #50B83C;
+$green-40: #EDF8EB;
+
+$secondary-main: #FD7E14;
+$secondary-pressed: #0DC76C;
+$secondary-surface: #F5FFFA;
+$secondary-focus: #20573D;
+
+$grey-3: #637381;
+$grey-4: #919EAB;
+$grey-5: #434343;
+$grey-transparent: rgba(106, 106, 106, 0.45);
+
+$neutral-10: #E8EBEF;
+$neutral-20: #DBDFE5;
+$neutral-30: #C4CAD3;
+$neutral-40: #A9B1BC;
+$neutral-50: #8D98A4;
+$neutral-60: #77828F;
+$neutral-70: #5B6676;
+$neutral-80: #414D5E;
+$neutral-90: #263446;
+$neutral-100: #192434;
+
+$semantic-danger-main: #F03A3A;
+$semantic-info-surface: #F0F3FF;
+$semantic-info-focus: #D6E0F8;
+$semantic-warning-focus: #F8EED6;
+$semantic-warning-main: #FAB005;
+
+$secondary-main: #FD7E14;
+
+$shadow-1: 0px 1px 2px rgba(0, 0, 0, 0.12);
+$shadow-2: 0px 4px 8px rgba(0, 0, 0, 0.12);
+$shadow-3: 0px 8px 12px rgba(0, 0, 0, 0.12);
+$shadow-4: 0px 8px 16px 0px rgba(0, 0, 0, 0.12);
+
+$body-50: #212B36;
+
+$retro-blue: #3287EC;
+$primary-surface: #F5FCFF;
+
+:root {
+  --base-10: #{$base-10};
+  --base-20: #{$base-20};
+  --base-30: #{$base-30};
+
+  --bleached-white: #{$bleached-white};
+
+  --primary-hover: #{$primary-hover};
+  --primary-main: #{$primary-main};
+  --primary-focus: #{$primary-focus};
+  --primary-pressed: #{$primary-pressed};
+
+  --grey-3: #{$grey-3};
+  --grey-4: #{$grey-4};
+  --grey-5: #{$grey-5};
+
+  --grey-transparent: #{$grey-transparent};
+
+  --neutral-10: #{$neutral-10};
+  --neutral-20: #{$neutral-20};
+  --neutral-30: #{$neutral-30};
+  --neutral-40: #{$neutral-40};
+  --neutral-50: #{$neutral-50};
+  --neutral-60: #{$neutral-60};
+  --neutral-70: #{$neutral-70};
+  --neutral-80: #{$neutral-80};
+  --neutral-90: #{$neutral-90};
+  --neutral-100: #{$neutral-100};
+
+  --semantic-danger-main: #{$semantic-danger-main};
+  --semantic-info-surface: #{$semantic-info-surface};
+  --semantic-info-focus: #{$semantic-info-focus};
+  --semantic-warning-focus: #{$semantic-warning-focus};
+  --semantic-warning-main: #{$semantic-warning-main};
+
+  --secondary-main: #{$secondary-main};
+
+  --shadow-1: #{$shadow-1};
+  --shadow-2: #{$shadow-2};
+  --shadow-3: #{$shadow-3};
+  --shadow-4: #{$shadow-4};
+
+  --body-50: #{$body-50};
+
+  --retro-blue: #{$retro-blue};
+  --primary-surface: #{$primary-surface};
+}
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1344px,
+//   xxl: 1920px
+// );
